@@ -46,7 +46,7 @@
                                                     </state>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="👻 Weekly iOS Meeting" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Ma-SG-0Bu">
-                                                    <rect key="frame" x="71" y="34.666666666666664" width="254" height="21"/>
+                                                    <rect key="frame" x="71.000000000000014" y="34.666666666666664" width="180.33333333333337" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -73,11 +73,10 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="ZqK-aW-LtT" firstAttribute="leading" secondItem="p1h-w4-eRC" secondAttribute="trailing" constant="10" id="65H-rM-vRa"/>
-                                                <constraint firstItem="5Ma-SG-0Bu" firstAttribute="leading" secondItem="p1h-w4-eRC" secondAttribute="trailing" constant="16" id="B7l-pY-EL1"/>
                                                 <constraint firstItem="JLw-X0-YoA" firstAttribute="centerY" secondItem="F90-IH-0d1" secondAttribute="centerY" id="EDs-WQ-B8w"/>
                                                 <constraint firstItem="ZqK-aW-LtT" firstAttribute="centerY" secondItem="F90-IH-0d1" secondAttribute="centerY" id="GCr-gY-CuH"/>
                                                 <constraint firstItem="p1h-w4-eRC" firstAttribute="leading" secondItem="F90-IH-0d1" secondAttribute="leading" constant="20" id="NHT-Y2-sTA"/>
-                                                <constraint firstItem="JLw-X0-YoA" firstAttribute="leading" secondItem="5Ma-SG-0Bu" secondAttribute="trailing" constant="10" id="UOk-jQ-wNO"/>
+                                                <constraint firstItem="5Ma-SG-0Bu" firstAttribute="leading" secondItem="p1h-w4-eRC" secondAttribute="trailing" constant="16" id="aB6-eP-3JQ"/>
                                                 <constraint firstAttribute="trailing" secondItem="JLw-X0-YoA" secondAttribute="trailing" constant="20" id="aHm-qs-QJT"/>
                                                 <constraint firstItem="p1h-w4-eRC" firstAttribute="centerY" secondItem="F90-IH-0d1" secondAttribute="centerY" id="mVj-LN-Mwg"/>
                                                 <constraint firstItem="5Ma-SG-0Bu" firstAttribute="centerY" secondItem="F90-IH-0d1" secondAttribute="centerY" id="svc-Mw-dTI"/>
@@ -92,7 +91,7 @@
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
-                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TodoListHeaderView" id="10Q-rz-btj">
+                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TodoListHeaderView" id="10Q-rz-btj" customClass="TodoListHeaderView" customModule="TodoList" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="0.0" width="390" height="50"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
@@ -107,7 +106,14 @@
                                         <constraint firstItem="Gxc-IM-VIF" firstAttribute="leading" secondItem="10Q-rz-btj" secondAttribute="leading" constant="20" id="JI8-p8-BV0"/>
                                         <constraint firstItem="Gxc-IM-VIF" firstAttribute="centerY" secondItem="10Q-rz-btj" secondAttribute="centerY" id="gIS-4w-jjZ"/>
                                     </constraints>
+                                    <connections>
+                                        <outlet property="sectionTitleLabel" destination="Gxc-IM-VIF" id="ShB-rp-Zc7"/>
+                                    </connections>
                                 </collectionReusableView>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="U8f-CI-egX"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Xrj-cg-h06"/>
+                                </connections>
                             </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -133,7 +139,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <sections>
-                            <tableViewSection headerTitle="YANA.DO" id="1HG-Up-9um">
+                            <tableViewSection headerTitle="Eungu" id="1HG-Up-9um">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="QVg-Qc-pDL">
                                         <rect key="frame" x="20" y="49" width="350" height="43.666667938232422"/>
