@@ -14,6 +14,7 @@
 		F0C3B45F26A808D9005FA796 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0C3B45D26A808D9005FA796 /* LaunchScreen.storyboard */; };
 		F0C3B46726A8111D005FA796 /* TodoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C3B46626A8111D005FA796 /* TodoListViewController.swift */; };
 		F0C3B46926A823CB005FA796 /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C3B46826A823CB005FA796 /* Todo.swift */; };
+		F0C3B46B26A9424E005FA796 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C3B46A26A9424E005FA796 /* Storage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		F0C3B46026A808D9005FA796 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F0C3B46626A8111D005FA796 /* TodoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListViewController.swift; sourceTree = "<group>"; };
 		F0C3B46826A823CB005FA796 /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
+		F0C3B46A26A9424E005FA796 /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				F0C3B45826A808D7005FA796 /* Main.storyboard */,
 				F0C3B46626A8111D005FA796 /* TodoListViewController.swift */,
 				F0C3B46826A823CB005FA796 /* Todo.swift */,
+				F0C3B46A26A9424E005FA796 /* Storage.swift */,
 				F0C3B45B26A808D9005FA796 /* Assets.xcassets */,
 				F0C3B45D26A808D9005FA796 /* LaunchScreen.storyboard */,
 				F0C3B46026A808D9005FA796 /* Info.plist */,
@@ -144,6 +147,7 @@
 				F0C3B45326A808D7005FA796 /* AppDelegate.swift in Sources */,
 				F0C3B45526A808D7005FA796 /* SceneDelegate.swift in Sources */,
 				F0C3B46926A823CB005FA796 /* Todo.swift in Sources */,
+				F0C3B46B26A9424E005FA796 /* Storage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -22,6 +22,35 @@ class TodoListCell: UICollectionViewCell {
     @IBOutlet weak var deleteButton: UIButton!
     @IBOutlet weak var strikeThroughView: UIView!
     
+    @IBOutlet weak var strikeThroughWidth: NSLayoutConstraint!
+    
+    var doneButtonTapHandler: ((Bool) -> Void)?
+    var deleteButtonTapHandler: (() -> Void)?
+    
+    
+    func updateUI(todo: Todo) {
+        
+    }
+    
+    private func showStrikeThrough(_ show: Bool) {
+        if show {
+            strikeThroughWidth.constant = descriptionLabel.bounds.width
+        } else {
+            strikeThroughWidth.constant = 0
+        }
+    }
+    
+    func reset() {
+        
+    }
+    
+    @IBAction func checkButtonTapped(_ sender: Any) {
+        
+    }
+    
+    @IBAction func deleteButtonTapped(_ sender: Any) {
+        
+    }
 }
 
 extension TodoListViewController: UICollectionViewDataSource {
