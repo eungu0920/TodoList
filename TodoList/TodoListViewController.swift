@@ -9,6 +9,11 @@ import UIKit
 
 class TodoListViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var inputViewBottom: NSLayoutConstraint!
+    @IBOutlet weak var inputTextField: UITextField!
+    
+    @IBOutlet weak var isTodayButton: UIButton!
+    @IBOutlet weak var addButton: UIButton!
     
     //    TODO: TodoViewModel 만들기[O]
     let todoListViewModel = TodoViewModel()
@@ -21,9 +26,24 @@ class TodoListViewController: UIViewController {
         
 //        TODO: 데이터 불러오기[O]
         todoListViewModel.loadTasks()
-
+        
+        let todo = TodoManager.shared.createTodo(detail: "👍🚀 Corona 난리", isToday: true)
+        Storage.saveTodo(todo, fileName: "test.json")
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        let todo = Storage.restoreTodo("test.json")
+        print("---> restore from disk: \(todo)")
     }
 
+}
+
+extension TodoListViewController {
+    @objc private func adjustInputView(noti: Notification) {
+        guard let userInfo = noti.userInfo else { return }
+    }
 }
 
 extension TodoListViewController: UICollectionViewDataSource {

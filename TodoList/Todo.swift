@@ -69,11 +69,14 @@ class TodoManager {
     }
     
     func saveTodo() {
-        
+        Storage.store(todos, to: .documents, as: "todos.json")
     }
     
     func retrieveTodo() {
+        todos = Storage.retrive("todos.json", from: .documents, as: [Todo].self) ?? []
         
+        let lastId = todos.last?.id ?? 0
+        TodoManager.lastId = lastId
     }
     
 }
@@ -117,6 +120,10 @@ class TodoViewModel {
     
     func deleteTodo(_ todo: Todo) {
         manager.deleteTodo(todo)
+    }
+    
+    func updateTodo(_ todo: Todo) {
+        manager.updateTodo(todo)
     }
     
     func loadTasks() {
