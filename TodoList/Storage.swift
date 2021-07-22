@@ -5,8 +5,8 @@
 //  Created by 은구 on 2021/07/22.
 //
 
-import UIKit
+import Foundation
 
-class Storage: NSObject {
+public class Storage {
 
 }

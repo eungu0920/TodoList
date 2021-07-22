@@ -44,6 +44,7 @@
                                                     <state key="normal" image="circle" catalog="system">
                                                         <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="24"/>
                                                     </state>
+                                                    <state key="selected" image="checkmark.circle.fill" catalog="system"/>
                                                     <connections>
                                                         <action selector="checkButtonTapped:" destination="5mM-Oh-92T" eventType="touchUpInside" id="Osb-ge-0f8"/>
                                                     </connections>
@@ -132,6 +133,9 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Tasks" image="checkmark.circle.fill" catalog="system" id="Txm-ey-vEc"/>
+                    <connections>
+                        <outlet property="collectionView" destination="hp7-0h-Wdp" id="x0p-gQ-ecY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
