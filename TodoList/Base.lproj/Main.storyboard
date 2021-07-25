@@ -95,6 +95,7 @@
                                             <outlet property="deleteButton" destination="JLw-X0-YoA" id="NnK-0o-O7z"/>
                                             <outlet property="descriptionLabel" destination="5Ma-SG-0Bu" id="TST-Te-lcx"/>
                                             <outlet property="strikeThroughView" destination="ZqK-aW-LtT" id="0zo-WB-qwL"/>
+                                            <outlet property="strikeThroughWidth" destination="uFw-Kc-cZm" id="FE7-kQ-cNS"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -299,6 +300,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Tl9-u6-ppR" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="F5E-n4-sjg">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="selectedImageTintColor" systemColor="systemPinkColor"/>
